@@ -3,6 +3,7 @@ import axios from 'axios';
 
 import Header from '../header';
 import Banner from './banner';
+import ArtistsList from './artistList';
 
 const URL_ARTIST = "http://localhost:3004/artists";
 
@@ -21,11 +22,12 @@ class Home extends React.Component {
     }
 
     render(){
-        console.log(this.state.artists)
+        console.log(this.state)
         return(
             <>
                 <Header />
                 <Banner />
+                <ArtistsList allArtists={this.state.artists}/>
             </>
         )
     }
