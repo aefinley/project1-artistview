@@ -2,12 +2,14 @@ import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import Home from './components/Home';
-// import Artist from './components/Artist';
+import Artist from './components/Artist';
+import Header from './components/header';
 
 const Routes = () => (
     <BrowserRouter>
+        <Header />
         <Switch>
-            {/* <Route path="/artist" component={Artist} />  */}
+            <Route path="/artist/:artistid" component={Artist} /> 
             <Route path="/" component={Home} />
         </Switch>
     </BrowserRouter>
