@@ -1,3 +1,4 @@
+This project is from https://www.udemy.com/course/the-complete-react-and-redux-course-build-modern-apps/
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
